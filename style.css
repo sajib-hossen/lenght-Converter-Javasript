@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.length-header {
+    text-align: center;
+}
+
+.length-header h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    background-color: green;
+    color: white;
+    padding: 20px 0;
+
+
+}
+
+.length-header p {
+    font-size: 25px;
+    margin-top: 20px;
+
+
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.field {
+    font-size: 20px;
+    padding: 20px 50px;
+    color: rgb(0, 0, 0);
+
+}
+
+.field label {
+    font-size: 30px;
+    text-transform: capitalize;
+
+
+}
+
+.field input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+
+
+}
+
+.btn {
+    margin-top: 60px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:490px) {
+
+    .fields {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

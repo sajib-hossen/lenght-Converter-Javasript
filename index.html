@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Length Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="length-header">
+            <h1>Length Converter</h1>
+            <p>Type a value in any of the fields to convert between Length measurements:</p>
+        </div>
+        <div class="length-container">
+            <div class="fields">
+                <div class="field">
+                    <label for="Feet">Feet :</label>
+                 <input type="number" name="Feet"  oninput="lengthConverter(this.id, this.value)" onchange="lengthConverter(this.id,this.value)" placeholder="Enter Your Feet Number" id="inputFeet">
+                </div>
+                <div class="field">
+                    <label for="cm">cm :</label>
+                 <input type="number" name="cm"  oninput="lengthConverter(this.id, this.value)" onchange="lengthConverter(this.id,this.value)" placeholder="Enter Your cm Number" id="inputCm">
+                </div>
+                <div class="field">
+                    <label for="inches">inches :</label>
+                 <input type="number" name="cm"  oninput="lengthConverter( this.id, this.value)" onchange="lengthConverter(this.value, this.id)" placeholder="Inches" id="inputInches">
+                </div>
+               
+                <div class="field">
+                    <label for="cm">Miles :</label>
+                 <input type="number" name="Miles"  oninput="lengthConverter( this.id, this.value)" onchange="lengthConverter(this.value, this.id)" placeholder=" Enter Your Miles Number " id="inputMiles">
+                </div>
+                <div class="field">
+                    <label for="Meters">Meters :</label>
+                 <input type="number" name="Meters"  oninput="lengthConverter(this.id, this.value)" onchange="lengthConverter(this.id,this.value)" placeholder="Enter Your Meters Number" id="inputMeters">
+                </div>
+                <div class="field">
+                    <label for="cm">Yards :</label>
+                 <input type="number" name="Yards"  oninput="lengthConverter( this.id, this.value)" onchange="lengthConverter(this.value, this.id)" placeholder=" Enter Your Yards Number" id="inputYards">
+                </div>
+                <div class="field">
+                    <label for="cm">Kilometers :</label>
+                 <input type="number" name="Kilometers"  oninput="lengthConverter( this.id, this.value)" onchange="lengthConverter(this.value, this.id)" placeholder=" Enter Your Kilometers Number" id="Kilometers">
+                </div>
+             
+          
+                <button class="btn" id="clearBtn">Clear</button>
+        </div>
+          
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
